@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonTappe(_ sender: AnyObject) {
      tapCount = tapCount + 1
-        if tapCount >= 10 {
+        if tapCount >= 2s0 {
             theLabel.text = "You've pushed me too many times!"
         }
         
