@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var Text1: UITextField!
+        @IBOutlet weak var Text2: UITextField!
+    
+    
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
-    
+
     @IBAction func Yo(_ sender: Any) {
         
     //this is a comment text
@@ -21,13 +24,12 @@ class ViewController: UIViewController {
         theLabel.text = "Buttons are Cool"
     }
     @IBAction func buttonTappe(_ sender: AnyObject) {
-     tapCount = tapCount + 1
-        if tapCount >= 10 {
-            theLabel.text = "You've pushed me too many times!"
-        }
-        
+
+        print(Text1.text!)
+        print(Text2.text!)
         
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

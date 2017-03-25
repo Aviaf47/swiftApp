@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eb-lo-1yn">
-                                <rect key="frame" x="140.5" y="50" width="94" height="21"/>
+                                <rect key="frame" x="141" y="50" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -34,29 +34,53 @@
                                     <action selector="buttonTappe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZ2-R8-XFJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTv-Os-pDc">
-                                <rect key="frame" x="164" y="200" width="46" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-zu-PMW">
+                                <rect key="frame" x="137.5" y="170" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6nh-n6-5yq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyB-gK-fnS">
+                                <rect key="frame" x="-7" y="-99" width="25" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="Yo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahQ-de-ECY"/>
-                                </connections>
-                            </button>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoG-vx-VwD">
+                                <rect key="frame" x="137.5" y="220" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tev-Y7-tOy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8Ml-sl-whQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jn7-pc-Yxf"/>
+                            <constraint firstItem="hoG-vx-VwD" firstAttribute="top" secondItem="Dz1-zu-PMW" secondAttribute="bottom" constant="20" id="Mtj-eP-Wf8"/>
                             <constraint firstItem="8Ml-sl-whQ" firstAttribute="top" secondItem="4eb-lo-1yn" secondAttribute="bottom" constant="9" id="Y9S-A4-vin"/>
                             <constraint firstItem="4eb-lo-1yn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="akg-G6-cFk"/>
+                            <constraint firstItem="Dz1-zu-PMW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fu6-29-9S3"/>
+                            <constraint firstItem="Dz1-zu-PMW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="gHD-JW-vhN"/>
                             <constraint firstItem="4eb-lo-1yn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tei-Ea-S7C"/>
+                            <constraint firstItem="hoG-vx-VwD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOF-1w-KSo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="Dz1-zu-PMW" id="HJ4-N4-UC0"/>
+                        <outlet property="Text2" destination="hoG-vx-VwD" id="vPI-YS-guI"/>
                         <outlet property="theLabel" destination="4eb-lo-1yn" id="NWy-1y-cEN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
