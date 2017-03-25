@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     }
     @IBAction func buttonTappe(_ sender: AnyObject) {
 
+        theLabel.text = "Answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
+        
         print(Text1.text!)
         print(Text2.text!)
         
